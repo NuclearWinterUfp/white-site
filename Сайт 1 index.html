@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продукт</title>
+    <style>
+        /* Встроенные стили для минимального оформления */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #4267B2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #4267B2;
+            border-bottom: 2px solid #4267B2;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #555;
+        }
+        .container {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .algorithm {
+            background-color: #f9f9f9;
+            border-left: 4px solid #4267B2;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .platform {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .platform-card {
+            flex: 1;
+            min-width: 300px;
+            background-color: #f0f2f5;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .factors {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .factor {
+            background-color: #e8f4fd;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 0.9em;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+            border-top: 1px solid #ddd;
+        }
+        .tip {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .platform-card {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Алгоритмы социальных сетей</h1>
+        <p>Как соцсети определяют, что показывать в вашей ленте</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Что такое алгоритмы соцсетей?</h2>
+            <p>Алгоритмы социальных сетей — это сложные математические формулы, которые определяют, какой контент показывать пользователям, в каком порядке и с какой частотой. Эти алгоритмы анализируют поведение пользователей, чтобы предоставлять наиболее релевантный контент.</p>
+<a href="#ТикТок">ТикТок</a>
+            <div class="tip">
+                <strong>Интересный факт:</strong> Первые соцсети показывали контент в хронологическом порядке. Алгоритмические ленты появились, когда объем контента стал слишком большим для простого хронологического отображения.
+            </div>
+        </section>
+
+        <section>
+
+
+                <div class="platform-card">
+                    <h3>Facebook</h3>
+                    <p>Алгоритм Facebook (сейчас Meta) оценивает тысячи сигналов для определения релевантности контента. Ключевые факторы:</p>
+                    <div class="factors">
+                        <div class="factor">Кто опубликовал запись</div>
+                        <div class="factor">Тип контента (видео, фото, текст)</div>
+                        <div class="factor">Взаимодействия с похожим контентом</div>
+                        <div class="factor">Популярность поста</div>
+                        <div class="factor">Свежесть контента</div>
+                    </div>
+                </div>
+
+                <div class="platform-card">
+                    <h3>Instagram</h3>
+                    <p>Instagram использует разные алгоритмы для разных частей приложения: Лента, Истории, Reels, Поиск. Основные сигналы:</p>
+                    <div class="factors">
+                        <div class="factor">Интерес к автору</div>
+                        <div class="factor">Активность пользователя</div>
+                        <div class="factor">История взаимодействий</div>
+                        <div class="factor">Популярность поста</div>
+                        <div class="factor">Время публикации</div>
+                    </div>
+                </div>
+
+                <div class="platform-card">
+                  <a name="ТикТок"></a>
+                    <h3>TikTok</h3>
+                    <p>Алгоритм TikTok известен своей точностью в определении интересов пользователей. Ключевые элементы:</p>
+                    <div class="factors">
+                        <div class="factor">Взаимодействия (лайки, комментарии)</div>
+                        <div class="factor">Информация о видео (хэштеги, звук)</div>
+                        <div class="factor">Настройки устройства и аккаунта</div>
+                        <div class="factor">Завершенность просмотра</div>
+                        <div class="factor">Создание контента</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Как работают алгоритмы?</h2>
+
+            <div class="algorithm">
+                <h3>1. Сбор данных</h3>
+                <p>Алгоритмы собирают информацию о каждом вашем действии: какие посты вы лайкаете, комментируете, делитесь, сколько времени смотрите, с кем взаимодействуете чаще.</p>
+            </div>
+
+            <div class="algorithm">
+                <h3>2. Анализ поведения</h3>
+                <p>На основе собранных данных система определяет ваши интересы, предпочтения и паттерны поведения. Например, если вы часто смотрите видео о кулинарии, алгоритм покажет вам больше такого контента.</p>
+            </div>
+
+            <div class="algorithm">
+                <h3>3. Ранжирование контента</h3>
+                <p>Каждому посту в вашей потенциальной ленте присваивается "балл релевантности". Посты с более высоким баллом показываются выше в ленте.</p>
+            </div>
+
+            <div class="algorithm">
+                <h3>4. Персонализация</h3>
+                <p>Алгоритм создает уникальную ленту для каждого пользователя, даже если они подписаны на одни и те же аккаунты.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Как адаптировать контент под алгоритмы?</h2>
+            <ul>
+                <li><strong>Поощряйте взаимодействие</strong> — задавайте вопросы, проводите опросы</li>
+                <li><strong>Используйте подходящие форматы</strong> — видео обычно получают больше охвата</li>
+                <li><strong>Публикуйте регулярно</strong> — но не в ущерб качеству контента</li>
+                <li><strong>Анализируйте статистику</strong> — смотрите, какой контент работает лучше</li>
+                <li><strong>Взаимодействуйте с аудиторией</strong> — отвечайте на комментарии, создавайте сообщество</li>
+                <li><strong>Следите за трендами</strong> — используйте актуальные темы и хэштеги</li>
+            </ul>
+
+            <div class="tip">
+                <strong>Важно:</strong> Хотя понимание алгоритмов важно, создание качественного, полезного контента для вашей аудитории всегда должно быть приоритетом. Алгоритмы меняются, но ценность хорошего контента остается.
+            </div>
+        </section>
+
+        <section>
+            <h2>Эволюция алгоритмов</h2>
+            <p>Алгоритмы соцсетей постоянно развиваются. Основные тенденции последних лет:</p>
+            <ul>
+                <li>Увеличение важности видеоформатов</li>
+                <li>Больший акцент на "безопасный" и "качественный" контент</li>
+                <li>Развитие рекомендательных систем (контент от тех, на кого вы не подписаны)</li>
+                <li>Интеграция искусственного интеллекта для лучшего понимания контекста</li>
+                <li>Попытки борьбы с зависимостью и улучшения цифрового благополучия</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
